@@ -1,2 +1,5 @@
 # ITMO-WEB-5-SEM
-Repository for WEB (Frontend) labs
+
+Адмайкин Павел Георгиевич M3304
+
+Интернет-магазин клавиатур "Keycap"
