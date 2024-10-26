@@ -74,7 +74,6 @@ header {
     border-radius: 5px;
 }
 
-
 section {
     margin-bottom: 20px;
     padding: 20px;
@@ -100,30 +99,14 @@ section p {
     color: #333;
 }
 
-main#catalog div {
+.catalog-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
 }
 
-main#catalog article img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px;
-}
-
-main#catalog article p {
-    text-align: center;
-    font-weight: bold;
-    color: #333;
-    margin-top: 5px;
-}
-
-
-main#catalog article {
+.catalog-grid article {
     background-color: #F8F5EC;
     border: 1px solid #D6C5B3;
     padding: 15px;
@@ -131,6 +114,21 @@ main#catalog article {
     width: calc(25% - 20px);
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-grid article img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.catalog-grid article p {
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    margin-top: 5px;
 }
 
 pre {
@@ -201,4 +199,67 @@ footer {
     font-size: 0.9rem;
     color: #333;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.responsive-table {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #D6C5B3;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #E7DFD2;
+}
+
+tr:nth-child(odd) {
+    background-color: #F8F5EC;
+}
+
+@media screen and (max-width: 768px) {
+    main#catalog .catalog-grid article {
+        width: calc(50% - 20px);
+    }
+
+    .header__nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__nav li {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main#catalog .catalog-grid article {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+
+    form input[type="email"] {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .advertisement {
+        display: none;
+    }
 }
