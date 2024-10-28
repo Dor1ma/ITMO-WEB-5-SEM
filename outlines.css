@@ -269,3 +269,60 @@ tr:nth-child(odd) {
         display: none;
     }
 }
+
+#preorder {
+    background-color: #E7DFD2;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+#preorderForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.order-list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.order-card {
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.order-card:hover {
+    transform: scale(1.02);
+}
+
+.order-content p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #333;
+}
+
+.delete-button {
+    background-color: #E57373;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+    background-color: #EF5350;
+}
