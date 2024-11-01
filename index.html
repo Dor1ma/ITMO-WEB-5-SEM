@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
     <script src="scripts/main.js" defer></script>
     <script src="scripts/reviews.js" defer></script>
 </head>
@@ -43,46 +45,52 @@
 <main id="catalog">
     <h2>Каталог товаров</h2>
     <section class="catalog-grid">
-        <article>
-            <img src="images/Varmilo_Sea_Melody_V3_87.webp" alt="Товар 1">
-            <p>Varmilo Sea Melody V3 87</p>
-            <p>17,000 ₽</p>
-        </article>
-        <article>
-            <img src="images/Varmilo_Panda_R2_V3_87.webp" alt="Товар 2">
-            <p>Varmilo Panda R2 V3 87</p>
-            <p>18,500 ₽</p>
-        </article>
-        <article>
-            <img src="images/Varmilo_Minilo_75__Eucalyptus_VXT81.webp" alt="Товар 3">
-            <p>Varmilo Minilo 75 Eucalyptus VXT81</p>
-            <p>18,000 ₽</p>
-        </article>
-        <article>
-            <img src="images/Varmilo_Vintage_Days_CMYK_V3_108.webp" alt="Товар 4">
-            <p>Varmilo Vintage Days CMYK V3 108</p>
-            <p>20,000 ₽</p>
-        </article>
-        <article>
-            <img src="images/Varmilo_Chang_e_V3_108.webp" alt="Товар 5">
-            <p>Varmilo Chang e V3 108</p>
-            <p>22,000 ₽</p>
-        </article>
-        <article>
-            <img src="images/Lofree_Touch_Tofu68.webp" alt="Товар 6">
-            <p>Lofree Touch Tofu68</p>
-            <p>14,000 ₽</p>
-        </article>
-        <article>
-            <img src="images/nuphy-air96-white.webp" alt="Товар 7">
-            <p>NuPhy Air96 V2 Ionic White</p>
-            <p>16,000 ₽</p>
-        </article>
-        <article>
-            <img src="images/NuPhy_Field75_Gravity.webp" alt="Товар 8">
-            <p>NuPhy Field75 Gravity</p>
-            <p>18,500 ₽</p>
-        </article>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <article class="swiper-slide">
+                    <img src="images/Varmilo_Sea_Melody_V3_87.webp" alt="Товар 1">
+                    <p>Varmilo Sea Melody V3 87</p>
+                    <p>17,000 ₽</p>
+                </article>
+                <article class="swiper-slide">
+                    <img src="images/Varmilo_Panda_R2_V3_87.webp" alt="Товар 2">
+                    <p>Varmilo Panda R2 V3 87</p>
+                    <p>18,500 ₽</p>
+                </article>
+                <article class="swiper-slide">
+                    <img src="images/Varmilo_Minilo_75__Eucalyptus_VXT81.webp" alt="Товар 3">
+                    <p>Varmilo Minilo 75 Eucalyptus VXT81</p>
+                    <p>18,000 ₽</p>
+                </article>
+                <article class="swiper-slide">
+                    <img src="images/Varmilo_Vintage_Days_CMYK_V3_108.webp" alt="Товар 4">
+                    <p>Varmilo Vintage Days CMYK V3 108</p>
+                    <p>20,000 ₽</p>
+                </article>
+                <article class="swiper-slide">
+                    <img src="images/Varmilo_Chang_e_V3_108.webp" alt="Товар 5">
+                    <p>Varmilo Chang e V3 108</p>
+                    <p>22,000 ₽</p>
+                </article>
+                <article class="swiper-slide">
+                    <img src="images/Lofree_Touch_Tofu68.webp" alt="Товар 6">
+                    <p>Lofree Touch Tofu68</p>
+                    <p>14,000 ₽</p>
+                </article>
+                <article class="swiper-slide">
+                    <img src="images/nuphy-air96-white.webp" alt="Товар 7">
+                    <p>NuPhy Air96 V2 Ionic White</p>
+                    <p>16,000 ₽</p>
+                </article>
+                <article class="swiper-slide">
+                    <img src="images/NuPhy_Field75_Gravity.webp" alt="Товар 8">
+                    <p>NuPhy Field75 Gravity</p>
+                    <p>18,500 ₽</p>
+                </article>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
     </section>
     <section class="responsive-table">
         <h2>Таблица товаров</h2>
